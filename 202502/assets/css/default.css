@@ -511,27 +511,27 @@ a, button {
       line-height: 26px; }
       #footer .container .info .copyright {
         line-height: 62px; }
-    #footer .container .counter {
+    #footer .container .usr-counter {
       position: absolute;
       top: 50%;
       right: 15px;
       transform: translateY(-50%); }
-      #footer .container .counter > ul {
+      #footer .container .usr-counter > ul {
         font-size: 0; }
-        #footer .container .counter > ul > li {
+        #footer .container .usr-counter > ul > li {
           display: inline-block;
           vertical-align: top;
           margin-right: 20px; }
-          #footer .container .counter > ul > li:last-child {
+          #footer .container .usr-counter > ul > li:last-child {
             margin-right: 0; }
-          #footer .container .counter > ul > li > dl > dt, #footer .container .counter > ul > li > dl dd {
+          #footer .container .usr-counter > ul > li > dl > dt, #footer .container .usr-counter > ul > li > dl dd {
             display: inline-block;
             vertical-align: top;
             font-size: 14px; }
-          #footer .container .counter > ul > li > dl > dt {
+          #footer .container .usr-counter > ul > li > dl > dt {
             color: #fff;
             margin-right: 5px; }
-          #footer .container .counter > ul > li > dl > dd {
+          #footer .container .usr-counter > ul > li > dl > dd {
             color: #ad3445;
             font-weight: bold; }
   @media (max-width: 1024px) {
@@ -542,7 +542,7 @@ a, button {
         padding-left: 15px; }
         #footer .container .logo {
           position: static; }
-        #footer .container .counter {
+        #footer .container .usr-counter {
           position: static;
           transform: none;
           margin-top: 20px;

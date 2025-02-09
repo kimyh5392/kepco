@@ -39,6 +39,7 @@
                 <nav id="gnb">
                     <div class="active-bar"><span class="bar"></span></div>
                     <ul>
+                        <li><a href="/202502/story/story.html"></a></li>
                         <li>
                             <a href="/202502/action/action.html">KEPCO ACTION</a>
                             <div>
@@ -90,7 +91,7 @@
                                 <li><a href="javascript:;">#게릴라이벤트</a></li>
                                 <li><a href="javascript:;">#러스틱라이프</a></li>
                                 <li><a href="javascript:;">#소통</a></li>
-
+                                
                                 <li><a href="javascript:;">#한전</a></li>
                                 <li><a href="javascript:;">#R&amp;D</a></li>
                                 <li><a href="javascript:;">#궁금</a></li>
@@ -140,6 +141,7 @@
             </div>
             <div class="nav-body">
                 <ul>
+                    <li><a href="/202502/story/story.html">COVER STORY</a></li>
                     <li>
                         <a href="javascript:;">KEPCO ACTION</a>
                         <div>
@@ -209,23 +211,31 @@
         
         <!-- page-top -->
         <div class="page-top">
-            <div class="backdrop" style="background-image: url(/202502/assets/images/special/bg_team.png);">
-                <img src="/202502/assets/images/special/bg_team.png" alt="">
+            <div class="backdrop" style="background-image: url(/202502/assets/images/special/bg_team_pagetop.png);">
+                <img src="/202502/assets/images/special/img_team_pagetop.png" alt="">
             </div>
             <div class="container-fluid">
                 <div class="v-align">
-                    <small>디지털전환실</small>
-                    <h3>
-                        에너지 대전환시대,<br> 디지털전환의 물결 주도한다!
-                    </h3>
-                    <p>
-                        디지털전환이란 거스를 수 없는 시대적 도전에 기업들은 사활을 걸고 응전하고 있다.<br>
-                        한전은 특히 에너지 분야의 디지털전환을 주도하고 있으며, 그 중심에 디지털전환실이 있다.
-                    </p>
-                    <ul class="info">
-                        <li><b>Text</b> 장은경</li>
-                        <li><b>Photo</b> 황지현</li>
-                    </ul>
+                    <div class="inner">
+                        <div class="cell">
+                            <small>디지털전환실</small>
+                            <h3>
+                                에너지 대전환시대,<br> 디지털전환의 물결 주도한다!
+                            </h3>
+                        </div>
+                        <div class="cell">
+                            <div class="inline">
+                                <p>
+                                    디지털전환이란 거스를 수 없는 시대적 도전에 기업들은 사활을 걸고 응전하고 있다.<br>
+                                    한전은 특히 에너지 분야의 디지털전환을 주도하고 있으며, 그 중심에 디지털전환실이 있다.
+                                </p>
+                                <ul class="info">
+                                    <li><b>Text</b> 장은경</li>
+                                    <li><b>Photo</b> 황지현</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -291,6 +301,30 @@
             </div>
         </div>
         
+        <!-- section class name -->
+        <section>
+            <div class="container">
+                <!-- section-header -->
+                <div class="section-header">
+                    <small>TEST ENG</small>
+                    <h3>제목 입니다<br>제목 입니다 제목 입니다</h3>
+                    <p>
+                        내용이 들어갑니다.<br>
+                        내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다.
+                    </p>
+                    <span>어떤 저떤 내용들</span>
+                </div>
+                <!-- section-content -->
+                <div class="section-content">
+                    
+                    <!-- counter -->
+                    <p class="counter">35,856</p>
+                    
+                    
+                </div>
+            </div>
+        </section>
+        
     </main>
     
     <!-- footer -->
@@ -299,7 +333,7 @@
             <h2 class="logo">
                 <img src="/202502/assets/images/img_logo_foot.png" alt="">
             </h2>
-            <div class="counter">
+            <div class="usr-counter">
                 <ul>
                     <li>
                         <dl>
@@ -325,15 +359,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.js"></script>
     <script src="/202502/assets/js/common.js"></script>
     <script src="/202502/assets/js/sub.js"></script>
+    <script src="/202502/assets/js/counterUp/jquery.counterup.min.js"></script>
+    <script src="/202502/assets/js/counterUp/waypoints.min.js"></script>
     <script>
         (function($){
             
-            // counter  관련
+            // user click counter  관련
             $(document).on('click', '.btn-counter', function(){
                 $(this).find('.total').html(function(i, val) {
                     return val * 1+1 
                 });
             });
+            
+            // counter 관련
+            $('.counter').counterUp({
+                delay: 10,
+                time: 2000
+            });
+            
             
         })(jQuery);
     </script>

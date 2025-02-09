@@ -254,9 +254,143 @@ a, button {
 
 /* page-top */
 .page-top {
-  height: calc(100vh - 160px); }
+  position: relative;
+  height: calc(100vh - 160px);
+  min-height: 800px; }
+  .page-top .backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover; }
+    .page-top .backdrop img {
+      display: none;
+      width: 100%; }
+  .page-top .container-fluid {
+    position: relative;
+    z-index: 2;
+    display: table;
+    max-width: 1530px;
+    height: 100%;
+    margin: 0 auto;
+    table-layout: fixed; }
+    .page-top .container-fluid .v-align {
+      display: table-cell;
+      vertical-align: bottom;
+      padding-bottom: 40px; }
+      .page-top .container-fluid .v-align .inner {
+        display: table;
+        width: 100%;
+        color: #000;
+        table-layout: fixed; }
+        .page-top .container-fluid .v-align .inner small {
+          display: block;
+          font-size: 20px;
+          font-weight: bold; }
+        .page-top .container-fluid .v-align .inner h3 {
+          font-size: 30px;
+          font-weight: 900;
+          margin-top: 20px; }
+        .page-top .container-fluid .v-align .inner p {
+          font-weight: bold; }
+        .page-top .container-fluid .v-align .inner .info {
+          font-size: 0;
+          margin-top: 20px; }
+          .page-top .container-fluid .v-align .inner .info > li {
+            display: inline-block;
+            font-size: 18px;
+            margin-right: 20px; }
+            .page-top .container-fluid .v-align .inner .info > li:last-child {
+              margin-right: 0; }
+            .page-top .container-fluid .v-align .inner .info > li b {
+              font-weight: 900;
+              display: inline-block;
+              vertical-align: top;
+              margin-right: 5px; }
+        .page-top .container-fluid .v-align .inner > .cell {
+          display: table-cell;
+          vertical-align: bottom; }
+          .page-top .container-fluid .v-align .inner > .cell:last-child {
+            text-align: right; }
+            .page-top .container-fluid .v-align .inner > .cell:last-child .inline {
+              display: inline-block;
+              text-align: left; }
   @media (max-width: 1024px) {
     .page-top {
-      height: auto; } }
+      height: auto;
+      min-height: auto;
+      background-color: #f0f0f0; }
+      .page-top .backdrop {
+        position: static;
+        background: none; }
+        .page-top .backdrop img {
+          display: block; }
+      .page-top .container-fluid {
+        display: block;
+        text-align: center; }
+        .page-top .container-fluid .v-align {
+          display: block; }
+          .page-top .container-fluid .v-align .inner {
+            display: block;
+            padding: 30px 0; }
+            .page-top .container-fluid .v-align .inner small {
+              font-size: 16px; }
+            .page-top .container-fluid .v-align .inner h3 {
+              font-size: 26px;
+              margin-top: 15px; }
+            .page-top .container-fluid .v-align .inner p {
+              margin-top: 30px; }
+            .page-top .container-fluid .v-align .inner .info li {
+              font-size: 14px; }
+            .page-top .container-fluid .v-align .inner .cell {
+              display: block; }
+              .page-top .container-fluid .v-align .inner .cell:last-child {
+                text-align: center; }
+                .page-top .container-fluid .v-align .inner .cell:last-child .inline {
+                  text-align: center; } }
+
+/* common */
+section {
+  padding: 100px 0; }
+  @media (max-width: 1024px) {
+    section {
+      padding: 60px 0; } }
+
+.section-header {
+  color: #000;
+  text-align: center;
+  padding-bottom: 60px; }
+  .section-header small {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px; }
+  .section-header h3 {
+    font-size: 30px;
+    font-weight: 900; }
+  .section-header p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px; }
+  .section-header span {
+    display: block;
+    font-size: 18px;
+    margin-top: 15px; }
+  @media (max-width: 1024px) {
+    .section-header {
+      padding-bottom: 30px; }
+      .section-header small {
+        font-size: 14px; }
+      .section-header h3 {
+        font-size: 26px; }
+      .section-header p {
+        font-size: 18px;
+        margin-top: 15px; }
+      .section-header span {
+        font-size: 16px;
+        margin-top: 10px; } }
 
 /*# sourceMappingURL=sub.css.map */
