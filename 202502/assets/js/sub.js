@@ -13,4 +13,14 @@
         var link = location.href;
         copyClip(link);
     });
+    
+    // highlight 관련
+    $(window).on('scroll', function() {
+        $('.highlight').each(function(index, elem) {
+            if ($(window).scrollTop() > $(elem).offset().top - ($(window).height() / 1.5)) {
+                $(elem).addClass('active');
+            }
+        });
+    });
+    
 })(jQuery);
