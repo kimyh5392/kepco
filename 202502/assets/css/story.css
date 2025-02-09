@@ -73,7 +73,14 @@ a, button {
   width: 100%;
   padding: 0 15px; }
 
+/* common */
+section {
+  padding: 100px 0; }
+  @media (max-width: 1024px) {
+    section {
+      padding: 60px 0; } }
+
 .story .page-header {
-  background-color: #EB6E8F; }
+  background-color: rgba(235, 110, 143, 0.6); }
 
 /*# sourceMappingURL=story.css.map */

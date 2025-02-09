@@ -73,6 +73,13 @@ a, button {
   width: 100%;
   padding: 0 15px; }
 
+/* common */
+section {
+  padding: 100px 0; }
+  @media (max-width: 1024px) {
+    section {
+      padding: 60px 0; } }
+
 /* page-header */
 .page-header {
   height: calc(100vh - 160px); }
@@ -351,13 +358,6 @@ a, button {
                 text-align: center; }
                 .page-top .container-fluid .v-align .inner .cell:last-child .inline {
                   text-align: center; } }
-
-/* common */
-section {
-  padding: 100px 0; }
-  @media (max-width: 1024px) {
-    section {
-      padding: 60px 0; } }
 
 .section-header {
   color: #000;
