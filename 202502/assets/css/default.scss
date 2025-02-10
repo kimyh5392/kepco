@@ -389,7 +389,6 @@
     }
 }
 
-
 #nav {
     display: none;
     @media(max-width: $md) {
@@ -397,13 +396,18 @@
         top: 79px;
         right: -100%;
         width: 100%;
-        height: calc(100% - 56px);
+        height: calc(100% - 79px);
         z-index: 10;
         display: block;
         text-align: center;
         @include transition();
         background-color: #fff;
         .container {
+            position: relative;
+            padding: 0;
+            height: 100%;
+            overflow-y: auto;
+            padding-bottom: 80px;
             .nav-top {
                 padding: 50px 0 100px;
                 > ul {

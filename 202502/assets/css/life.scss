@@ -232,20 +232,21 @@
                                     font-weight: 700;
                                     overflow: hidden;
                                     margin-bottom: 20px;
-                                    &::after {
-                                        content: '';
+                                    /*&::after {
+                                        
+                                    }*/
+                                    span {
+                                        font-weight: 900;
+                                    }
+                                    .bubble {
                                         position: absolute;
                                         top: 50%;
                                         left: 150px;
                                         width: 500px;
                                         height: 15px;
-                                        background-image: url('../images/life/img_event06.png');
                                         background-repeat: no-repeat;
                                         background-size: contain;
                                         background-position: left;
-                                    }
-                                    span {
-                                        font-weight: 900;
                                     }
                                 }
                                 ul.review {
@@ -380,20 +381,11 @@
                                         font-weight: 700;
                                         padding-right: 30px;
                                         overflow: hidden;
-                                        &::after {
-                                            content: '';
-                                            position: absolute;
-                                            top: 50%;
-                                            left: 150px;
-                                            width: 300px;
-                                            height: 15px;
-                                            background-image: url('../images/life/img_event06.png');
-                                            background-repeat: no-repeat;
-                                            background-size: contain;
-                                            background-position: left;
-                                        }
                                         span {
                                             font-weight: 900;
+                                        }
+                                        .bubble {
+                                            
                                         }
                                     }
                                     ul.review {
@@ -1078,14 +1070,12 @@
             padding: 70px;
             padding-top: 130px;
             z-index: 0;
-            &::before {
-                content: '';
+            .spring {
                 position: absolute;
                 top: -50px;
                 left: 0;
                 width: 100%;
                 height: 100px;
-                background-image: url('../images/life/img_quiz01.png');
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: 80%;
