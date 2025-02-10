@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="/202502/assets/css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.css">
+    <!-- sakura -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.css">
     <title>KEPCO</title>
 </head>
 <body>
@@ -185,17 +187,31 @@
         </div>
     </nav>
     
-    <!-- content -->
-    <main id="content">
-        
-        <!-- jumbotron -->
-        <div class="jumbotron">
-            <div class="container">
+    
+    <!-- sakura -->
+    <div class="sakura"></div>
+    
+    <!-- jumbotron -->
+    <div class="jumbotron">
+        <div class="container-fluid">
+            <div class="item-img">
                 <figure>
-                    
+                    <img src="/202502/assets/images/main/bg_jumbotron.png" alt="">
                 </figure>
             </div>
+            <div class="details">
+                <a href="/202502/story/story.html">
+                    <small>2025 February vol.620</small>
+                    <span>처음에<br> 가지고 있던<br> 마음</span>
+                    <hr>
+                    <b>초심</b>
+                </a>
+            </div>
         </div>
+    </div>
+    
+    <!-- content -->
+    <main id="content">
         
         <!-- latest -->
         <section class="latest">
@@ -206,33 +222,33 @@
                 <div class="section-content">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="/202502/action/opinion.html">
                                 <figure>
                                     <img src="/202502/assets/images/main/img_latest01.png" alt="">
                                     <figcaption>
-                                        <p>긍정, 너때문이야~ 긍정도 습관이다</p>
+                                        <p>초심으로 행복한 삶 누리기</p>
                                         <small>Opinion</small>
                                     </figcaption>
                                 </figure>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="/202502/special/numbers.html">
                                 <figure>
                                     <img src="/202502/assets/images/main/img_latest02.png" alt="">
                                     <figcaption>
-                                        <p>태양광이 불러온 나비효과 사우디아라비아 괌 태양광발전 수주</p>
+                                        <p>빛의 길, 전국을 잇다</p>
                                         <small>NUMBERS</small>
                                     </figcaption>
                                 </figure>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="/202502/special/heritage.html">
                                 <figure>
                                     <img src="/202502/assets/images/main/img_latest03.png" alt="">
                                     <figcaption>
-                                        <p>R&amp;D Heritage</p>
+                                        <p>한전의 전력망 이슈와 과제</p>
                                         <small>Our R&amp;D Heritage</small>
                                     </figcaption>
                                 </figure>
@@ -257,57 +273,83 @@
                     <div class="swiper recommend-slider">
                         <ul class="swiper-wrapper">
                             <li class="swiper-slide">
-                                <a href="#">
-                                    <video muted autoplay loop playsinline>
-                                        <source src="/202502/assets/images/main/img_video_sm01.mp4" type="video/mp4">
-                                    </video>
-                                </a>
-                            </li>
-                            <li class="swiper-slide">
-                                <a href="#">
-                                    <video muted autoplay loop playsinline>
-                                        <source src="/202502/assets/images/main/img_video_sm02.mp4" type="video/mp4">
-                                    </video>
-                                </a>
-                            </li>
-                            <li class="swiper-slide">
-                                <a href="#">
+                                <a href="/202502/special/story.html">
                                     <img src="/202502/assets/images/main/img_none_frame.png" alt="">
                                     <div class="details" style="background-color: #864ebb;">
-                                        <small>LIGHT</small>
-                                        <strong>나주 본사 시대, 벌써 10년</strong>
+                                        <small>KEPCO ACTION</small>
+                                        <strong>KEPCO STORY</strong>
                                     </div>
-                                    <div class="backdrop" style="background-image: url(/202502/assets/images/main/img_recommend01.jpg)"></div>
+                                    <div class="backdrop" style="background-image: url(/202502/assets/images/main/img_recommend01.png)"></div>
                                 </a>
                             </li>
                             <li class="swiper-slide">
-                                <a href="#">
+                                <a href="/202502/special/numbers.html">
                                     <img src="/202502/assets/images/main/img_none_frame.png" alt="">
                                     <div class="details" style="background-color: #108940;">
-                                        <small>HIGHTLIGHT </small>
-                                        <strong>빛가람 KEPCO 시대, 10년의 발자취</strong>
+                                        <small>KEPCO SPECIAL</small>
+                                        <strong>NUMBERS</strong>
                                     </div>
-                                    <div class="backdrop" style="background-image: url(/202502/assets/images/main/img_recommend02.jpg)"></div>
+                                    <div class="backdrop" style="background-image: url(/202502/assets/images/main/img_recommend02.png)"></div>
                                 </a>
                             </li>
                             <li class="swiper-slide">
-                                <a href="#">
+                                <a href="/special/heritage.html">
                                     <img src="/202502/assets/images/main/img_none_frame.png" alt="">
                                     <div class="details" style="background-color: #ff5310;">
-                                        <small>응답하라 2014 </small>
-                                        <strong>10년 전 나에게 답장을 보내다</strong>
+                                        <small>KEPCO SPECIAL</small>
+                                        <strong>OUR HERITAGE</strong>
                                     </div>
-                                    <div class="backdrop" style="background-image: url(/202502/assets/images/main/img_recommend03.jpg)"></div>
+                                    <div class="backdrop" style="background-image: url(/202502/assets/images/main/img_recommend03.png)"></div>
                                 </a>
                             </li>
                             <li class="swiper-slide">
-                                <a href="#">
+                                <a href="/202502/life/trend.html">
                                     <img src="/202502/assets/images/main/img_none_frame.png" alt="">
                                     <div class="details" style="background-color: #2e57b7;">
-                                        <small>MAGAZINE P </small>
-                                        <strong>잠시 멈춤의 순간들</strong>
+                                        <small>LIFE ACTION</small>
+                                        <strong>TREND</strong>
                                     </div>
-                                    <div class="backdrop" style="background-image: url(/202502/assets/images/main/img_recommend04.jpg)"></div>
+                                    <div class="backdrop" style="background-image: url(/202502/assets/images/main/img_recommend04.png)"></div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="/202502/special/story.html">
+                                    <img src="/202502/assets/images/main/img_none_frame.png" alt="">
+                                    <div class="details" style="background-color: #864ebb;">
+                                        <small>KEPCO ACTION</small>
+                                        <strong>KEPCO STORY</strong>
+                                    </div>
+                                    <div class="backdrop" style="background-image: url(/202502/assets/images/main/img_recommend01.png)"></div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="/202502/special/numbers.html">
+                                    <img src="/202502/assets/images/main/img_none_frame.png" alt="">
+                                    <div class="details" style="background-color: #108940;">
+                                        <small>KEPCO SPECIAL</small>
+                                        <strong>NUMBERS</strong>
+                                    </div>
+                                    <div class="backdrop" style="background-image: url(/202502/assets/images/main/img_recommend02.png)"></div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="/special/heritage.html">
+                                    <img src="/202502/assets/images/main/img_none_frame.png" alt="">
+                                    <div class="details" style="background-color: #ff5310;">
+                                        <small>KEPCO SPECIAL</small>
+                                        <strong>OUR HERITAGE</strong>
+                                    </div>
+                                    <div class="backdrop" style="background-image: url(/202502/assets/images/main/img_recommend03.png)"></div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="/202502/life/trend.html">
+                                    <img src="/202502/assets/images/main/img_none_frame.png" alt="">
+                                    <div class="details" style="background-color: #2e57b7;">
+                                        <small>LIFE ACTION</small>
+                                        <strong>TREND</strong>
+                                    </div>
+                                    <div class="backdrop" style="background-image: url(/202502/assets/images/main/img_recommend04.png)"></div>
                                 </a>
                             </li>
                         </ul>
@@ -330,45 +372,45 @@
                     <div class="swiper best-slider">
                         <ul class="swiper-wrapper">
                             <li class="swiper-slide">
-                                <a href="#">
+                                <a href="/202502/life/event.html">
                                     <figure>
-                                        <img src="/202502/assets/images/main/img_best01.jpg" alt="">
+                                        <img src="/202502/assets/images/main/img_best01.png" alt="">
                                         <figcaption>
-                                            <p>LIGHT</p>
-                                            <small>나주 본사 시대, 벌써 10년</small>
+                                            <p>GUERRILLA EVENTS</p>
+                                            <small>LIFE ACTION</small>
                                         </figcaption>
                                     </figure>
                                 </a>
                             </li>
                             <li class="swiper-slide">
-                                <a href="#">
+                                <a href="/202502/special/team.html">
                                     <figure>
-                                        <img src="/202502/assets/images/main/img_best02.jpg" alt="">
+                                        <img src="/202502/assets/images/main/img_best02.png" alt="">
                                         <figcaption>
-                                            <p>HIGHTLIGHT</p>
-                                            <small>빛가람 KEPCO 시대, 10년의 발자취</small>
+                                            <p>ONE TEAM</p>
+                                            <small>KEPCO SPECIA</small>
                                         </figcaption>
                                     </figure>
                                 </a>
                             </li>
                             <li class="swiper-slide">
-                                <a href="#">
+                                <a href="/202502/action/interview.html">
                                     <figure>
-                                        <img src="/202502/assets/images/main/img_best03.jpg" alt="">
+                                        <img src="/202502/assets/images/main/img_best03.png" alt="">
                                         <figcaption>
-                                            <p>MAGAZINE P</p>
-                                            <small>잠시 멈춤의 순간들</small>
+                                            <p>INTERVIEW CROSS</p>
+                                            <small>KEPCO ACTION</small>
                                         </figcaption>
                                     </figure>
                                 </a>
                             </li>
                             <li class="swiper-slide">
-                                <a href="#">
+                                <a href="/202502/action/commentary.html">
                                     <figure>
-                                        <img src="/202502/assets/images/main/img_best04.jpg" alt="">
+                                        <img src="/202502/assets/images/main/img_best04.png" alt="">
                                         <figcaption>
-                                            <p>K-CREATOR</p>
-                                            <small>실 한 줄로 엮는 세상, 뜨개</small>
+                                            <p>COMMENTARY</p>
+                                            <small>KEPCO ACTION</small>
                                         </figcaption>
                                     </figure>
                                 </a>
@@ -412,8 +454,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.js"></script>
     <script src="/202502/assets/js/common.js"></script>
     <script>
+        
+        // sakura event
+        var sakura = new Sakura('.sakura', {
+            fallSpeed: 1,
+        });
+        
+        setTimeout(function(){
+            $('.jumbotron').addClass('show');
+        }, 500);
         
         (function($){
             // 영역별 모션 효과

@@ -2,6 +2,7 @@
 
 /* page-header */
 .page-header {
+    overflow: hidden;
     height: calc(100vh - 160px);
     .container-fluid {
         position: relative;

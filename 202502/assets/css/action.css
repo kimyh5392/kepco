@@ -78,7 +78,7 @@ section {
   padding: 100px 0 200px; }
   @media (max-width: 1024px) {
     section {
-      padding: 60px 0 120px; } }
+      padding: 60px 0 160px; } }
 
 /* page-header */
 .page-header.opinion-header {
@@ -494,7 +494,7 @@ section {
         .interview article .container > div.details .contents > ul > li ~ li {
           margin-top: 15px; }
         .interview article ~ article {
-          padding-bottom: 120px; } }
+          padding-bottom: 160px; } }
 
 /* prompt */
 .prompt .container article {

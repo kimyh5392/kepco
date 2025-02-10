@@ -78,10 +78,11 @@ section {
   padding: 100px 0 200px; }
   @media (max-width: 1024px) {
     section {
-      padding: 60px 0 120px; } }
+      padding: 60px 0 160px; } }
 
 /* page-header */
 .page-header {
+  overflow: hidden;
   height: calc(100vh - 160px); }
   .page-header .container-fluid {
     position: relative;
