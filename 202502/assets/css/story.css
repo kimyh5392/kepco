@@ -80,7 +80,74 @@ section {
     section {
       padding: 60px 0; } }
 
-.story .page-header {
+.page-header.story-header {
   background-color: rgba(235, 110, 143, 0.6); }
+  .page-header.story-header .container-fluid > div.details {
+    text-align: center; }
+    .page-header.story-header .container-fluid > div.details small {
+      color: #ee5862; }
+    .page-header.story-header .container-fluid > div.details h3 {
+      color: #000; }
+    .page-header.story-header .container-fluid > div.details p {
+      color: #000; }
+    .page-header.story-header .container-fluid > div.details hr {
+      width: 100px;
+      height: 2px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #000; }
+
+/* story */
+.story .section-content > ol > li .box {
+  display: flex;
+  align-items: end; }
+  .story .section-content > ol > li .box > div {
+    width: 50%; }
+  .story .section-content > ol > li .box figure img {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px; }
+  .story .section-content > ol > li .box .details {
+    padding-bottom: 60px; }
+    .story .section-content > ol > li .box .details > dl {
+      display: inline-block;
+      text-align: left; }
+      .story .section-content > ol > li .box .details > dl dt {
+        font-size: 40px;
+        font-weight: bold; }
+      .story .section-content > ol > li .box .details > dl dd {
+        margin-top: 30px; }
+.story .section-content > ol > li:nth-of-type(2n + 1) .box .details {
+  padding-left: 60px; }
+.story .section-content > ol > li:nth-of-type(2n + 2) .box {
+  flex-direction: row-reverse; }
+  .story .section-content > ol > li:nth-of-type(2n + 2) .box .details {
+    text-align: right;
+    padding-right: 60px; }
+.story .section-content > ol > li > figure {
+  margin-top: 60px; }
+.story .section-content > ol > li ~ li {
+  margin-top: 100px; }
+@media (max-width: 1024px) {
+  .story .section-content > ol > li .box {
+    flex-direction: column !important; }
+    .story .section-content > ol > li .box > div {
+      width: 100%; }
+      .story .section-content > ol > li .box > div.details {
+        padding: 30px 0 0 0 !important; }
+        .story .section-content > ol > li .box > div.details > dl {
+          display: block;
+          text-align: center; }
+          .story .section-content > ol > li .box > div.details > dl dt {
+            font-size: 30px; }
+          .story .section-content > ol > li .box > div.details > dl dd {
+            margin-top: 10px; }
+            .story .section-content > ol > li .box > div.details > dl dd br {
+              display: none; }
+    .story .section-content > ol > li .box figure img ~ img {
+      margin-top: 10px; }
+  .story .section-content > ol > li ~ li {
+    margin-top: 60px; } }
 
 /*# sourceMappingURL=story.css.map */

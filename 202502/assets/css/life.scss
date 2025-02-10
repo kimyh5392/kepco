@@ -1,0 +1,460 @@
+figure {
+    display: block;
+    margin: 0;
+    img {
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+
+// CULTURE & MIND
+.culture {
+    .page-header {
+        .container-fluid {
+            .details {
+                background-color: #dad3e8;
+            }
+        }
+    }
+}
+
+
+// KEPCO NEWS
+.news-wrap {
+    background-color: #d4e1e1;
+    .container {
+        .section-header {
+                .section-title {
+                    border-top: 4px double #121212;
+                    border-bottom: 1px solid #121212;
+                    h3 {
+                        font-size: 50px;
+                        border-bottom: 2px solid #121212;
+                        padding: 10px 0;
+                    }
+                    small {
+                        display: block;
+                        padding: 0;
+                        margin: 0;
+                        padding: 10px 0;
+                    }
+                }
+            
+        }
+        .section-content {
+            ul {
+                li {
+                    padding: 60px 0;
+                    border-bottom: 1px solid #121212;
+                    &:nth-of-type(1) {
+                        padding-top: 0;
+                    }
+                    &:nth-last-of-type(1) {
+                        padding-bottom: 0;
+                        border-bottom: none;
+                    }
+                    h3 {
+                        font-size: 30px;
+                        margin-bottom: 20px;
+
+                    }
+                    p {
+                        font-size: 20px;
+                    }
+                    figure {
+                        margin: 0 auto;
+                        margin-top: 20px;
+                        max-width: 1000px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* ***********************1024 *********************** */
+    @media(max-width: 1024px) {
+        .container {
+            .section-header {
+                    .section-title {
+                        border-top: 4px double #121212;
+                        border-bottom: 1px solid #121212;
+                        h3 {
+                            font-size: 50px;
+                            border-bottom: 2px solid #121212;
+                            padding: 10px 0;
+                        }
+                        small {
+                            display: block;
+                            padding: 0;
+                            margin: 0;
+                            padding: 10px 0;
+                        }
+                    }
+                
+            }
+            .section-content {
+                ul {
+                    li {
+                        padding: 60px 0;
+                        border-bottom: 1px solid #121212;
+                        &:nth-of-type(1) {
+                            padding-top: 0;
+                        }
+                        &:nth-last-of-type(1) {
+                            padding-bottom: 0;
+                            border-bottom: none;
+                        }
+                        h3 {
+                            font-size: 26px;
+                            margin-bottom: 20px;
+                            line-height: 41.6px;
+                            font-weight: 900;
+    
+                        }
+                        p {
+                            font-size: 18px;
+                            word-break: break-all;
+                        }
+                        figure {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/* KEPCO QUIZ */
+.quiz-wrap {
+    background-color: #e5926c;
+    .container {
+        .quiz-container {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            gap: 30px;
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 8px solid #888;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            padding: 70px;
+            padding-top: 130px;
+            z-index: 0;
+            &::before {
+                content: '';
+                position: absolute;
+                top: -50px;
+                left: 0;
+                width: 100%;
+                height: 100px;
+                background-image: url('../images/life/img_quiz01.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 80%;
+            }
+            .item-box {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                h3 {
+                    font-size: 80px;
+                    line-height: normal;
+                    font-weight: 900;
+                    span {
+                        color: #dd625f;
+                    }
+                }
+                > li {
+                    padding-bottom: 30px;
+                    border-bottom: 1px solid #121212;
+                    &:nth-last-of-type(1) {
+                        padding-bottom: 0;
+                        border: none;
+                    }
+                    &.title {
+                        display: flex;
+                        gap: 100px;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                    &.poem {
+                        strong {
+                            display: block;
+                            margin: 0 auto;
+                            width: 100%;
+                            text-align: center;
+                            font-weight: 900;
+                            font-size: 30px;
+                            span {
+                                font-size: 40px;
+                                color: #dd625f;
+                            }
+                        }
+                        .details {
+                            display: block;
+                            margin: 0 auto;
+                            margin-top: 30px;
+                            width: 80%;
+                            background-color: #dd625f;
+                            padding: 10px 50px;
+                            border-radius: 30px;
+                            color: #fff;
+                            font-size: 20px;
+                            small {
+                                display: block;
+                                font-weight: 900;
+                                font-size: 20px;
+                                margin-bottom: 15px;
+                            }
+                            dl {
+                                dt {
+                                    display: inline;
+                                    font-weight: 900;
+                                }
+                                dd {
+                                    display: inline;
+                                }
+                            }
+                        }
+                    }
+                    &.event {
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 30px;
+                        .event-1 {
+                            display: block;
+                            width: 50%;
+                            border-right: 1px solid #121212;
+                            padding-right: 15px;
+                            ul {
+                                li {
+                                    margin-bottom: 10px;
+                                    &:nth-last-of-type(1) {
+                                        margin-bottom: 0;
+                                    }
+                                    dl {
+                                        font-size: 18px;
+                                        dt {
+                                            display: inline-block;
+                                            width: 100px;
+                                            font-weight: 900;
+                                            margin-right: 10px;
+                                        }
+                                        dd {
+                                            display: inline-block;
+                                        }
+                                    }
+                                }
+                            }
+                            .event-image {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: end;
+                                margin-top: 30px;
+                                gap: 10px;
+                                figure {
+                                    display:block;
+                                    margin: 0;
+                                    width: 100%;
+                                    max-width: 100px;
+                                    img {
+                                        display: block;
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                        .event-2 {
+                            width: 50%;
+                            small {
+                                display: block;
+                                font-size: 20px;
+                                font-weight: 900;
+                                margin-bottom: 30px;
+                            }
+                            figure {
+                                display: block;
+                                margin: 0 auto;
+                                width: 100%;
+                                max-width: 300px;
+                                img {
+                                    display: block;
+                                    margin: 0;
+                                    width: 100%;
+                                }
+                            }
+                            .answer {
+                                display: block;
+                                margin-top: 30px;
+                                width: 100%;
+                                text-align: center;
+                                font-size: 30px;
+                                span {
+                                    display: inline-block;
+                                    border: 1px solid #121212;
+                                    width: 60px;
+                                    height: 60px;
+                                    line-height: 2;
+                                    vertical-align: middle;
+                                    border-radius: 100%;
+                                }
+
+                            }
+                        }
+                    }
+                    &.investigate {
+                        font-size: 18px;
+                        small {
+                            display: block;
+                            font-size: 20px;
+                            font-weight: 900;
+                            margin-bottom: 30px
+                        }
+                        > ul {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            gap: 10px;
+                            width: fit-content;
+                            li {
+                                text-align: center;
+                                width: calc(100% / 5 - 10px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    /* ***********************1024 *********************** */
+    @media(max-width: 1024px) {
+        .container {
+            .quiz-container {
+                padding: 15px;
+                &::before {
+                    top: -55px;
+                    background-size: 90%;
+                }
+                .item-box {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    > li {
+                        &.title {
+                            gap: 30px;
+                            flex-direction: column;
+                        }
+                        &.poem {
+                            strong {
+                                font-size: 20px;
+                                line-height: 1.5;
+                                span {
+                                    font-size: 30px;
+                                }
+                            }
+                            .details {
+                                width: 100%;
+                                padding: 10px 20px;
+                                small {
+                                    display: block;
+                                    font-weight: 900;
+                                    font-size: 18px;
+                                    margin-bottom: 10px;
+                                }
+                                dl {
+                                    font-size: 16px;
+                                    word-break: break-all;
+                                    dt {
+                                        display: inline;
+                                        font-weight: 900;
+                                    }
+                                    dd {
+                                        font-size: 16px;
+                                        display: inline;
+                                    }
+                                }
+                            }
+                        }
+                        &.event {
+                            flex-direction: column;
+                            .event-1 {
+                                width: 100%;
+                                border: none;
+                                padding: 0;
+                                ul {
+                                    li {
+                                        margin-bottom: 10px;
+                                        dl {
+                                            font-size: 16px;
+                                            dt {
+                                                display: inline-block;
+                                                width: fit-content;
+                                                font-weight: 900;
+                                                margin-right: 10px;
+                                                width: 80px;
+                                            }
+                                            dd {
+                                                display: inline-block;
+                                            }
+                                        }
+                                    }
+                                }
+                                .event-image {
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: space-evenly;
+                                    gap: 0;
+                                }
+                            }
+                            .event-2 {
+                                width: 100%;
+                                small {
+                                    text-align: center;
+                                    font-size: 24px;
+                                }
+                            }
+                        }
+                        &.investigate {
+                            font-size: 18px;
+                            small {
+                                text-align: center;
+                                font-size: 24px;
+                            }
+                            > ul {
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: space-between;
+                                gap: 10px;
+                                li {
+                                    width: calc(100% / 2 - 10px);
+                                    text-align: center;
+                                }
+                            }
+                        }
+                        h3 {
+                            font-size: 45px;
+                            line-height: 1.5;
+                            font-weight: 900;
+                            text-align: center;
+                            padding-top: 30px;
+                            span {
+                                color: #dd625f;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

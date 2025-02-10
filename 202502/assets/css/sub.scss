@@ -66,6 +66,14 @@
                         font-weight: 400;
                         color: #fff;
                         margin-top: 20px;
+                        b {
+                            display: inline-block;
+                            vertical-align: top;
+                            font-weight: 900;
+                            & ~ b {
+                                margin-left: 20px;
+                            }
+                        }
                     }
                 }
             }
@@ -425,9 +433,36 @@
 }
 
 
+// responsive block & none
+.visible-sm {
+    display: none !important;
+    @media(max-width: $md) {
+        display: block !important;
+    }
+}
+.visible-lg {
+    display: block;
+    @media(max-width: $md) {
+        display: none !important;
+    }
+}
 
+br {
+    &.d-block {
+        display: block !important;
+    }
+}
 
-
+figure {
+    img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .caption {
+        margin-top: 10px;
+    }
+}
 
 
 
