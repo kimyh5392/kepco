@@ -75,10 +75,10 @@ a, button {
 
 /* common */
 section {
-  padding: 100px 0; }
+  padding: 100px 0 200px; }
   @media (max-width: 1024px) {
     section {
-      padding: 60px 0; } }
+      padding: 60px 0 120px; } }
 
 /* page-header */
 .page-header {
@@ -437,5 +437,42 @@ figure img {
   margin: 0 auto; }
 figure .caption {
   margin-top: 10px; }
+
+sup {
+  vertical-align: super;
+  font-size: smaller; }
+
+/* page-controls */
+#content {
+  position: relative; }
+  #content .page-controls {
+    position: absolute;
+    bottom: 90px;
+    left: 0;
+    width: 100%;
+    z-index: 1; }
+    #content .page-controls .container {
+      overflow: hidden; }
+      #content .page-controls .container > a {
+        display: inline-block;
+        color: #fff;
+        line-height: 40px;
+        border-radius: 100px;
+        padding: 0 15px;
+        background-color: #333; }
+        #content .page-controls .container > a.btn-page-prev {
+          float: left; }
+        #content .page-controls .container > a.btn-page-next {
+          float: right; }
+    #content .page-controls.white .container > a {
+      color: #333;
+      background-color: #fff; }
+  @media (max-width: 1024px) {
+    #content .page-controls {
+      bottom: 70px; }
+      #content .page-controls .container > a {
+        font-size: 12px;
+        line-height: 32px;
+        padding: 0 10px; } }
 
 /*# sourceMappingURL=sub.css.map */

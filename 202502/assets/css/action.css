@@ -75,10 +75,10 @@ a, button {
 
 /* common */
 section {
-  padding: 100px 0; }
+  padding: 100px 0 200px; }
   @media (max-width: 1024px) {
     section {
-      padding: 60px 0; } }
+      padding: 60px 0 120px; } }
 
 /* page-header */
 .page-header.opinion-header {
@@ -456,7 +456,8 @@ section {
     .interview article .container > div.details .contents > ul > li ~ li {
       margin-top: 30px; }
     .interview article ~ article {
-      background-color: #f0f0f0; }
+      background-color: #f0f0f0;
+      padding-bottom: 200px; }
   @media (max-width: 1024px) {
     .interview {
       overflow: hidden; }
@@ -491,7 +492,9 @@ section {
           .interview article .container > div.details .contents > ul > li > dl > dd {
             display: inline; }
         .interview article .container > div.details .contents > ul > li ~ li {
-          margin-top: 15px; } }
+          margin-top: 15px; }
+        .interview article ~ article {
+          padding-bottom: 120px; } }
 
 /* prompt */
 .prompt .container article {

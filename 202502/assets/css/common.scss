@@ -93,8 +93,8 @@ a, button {
 
 /* common */
 section {
-    padding: 100px 0;
+    padding: 100px 0 200px;
     @media(max-width: $md) {
-        padding: 60px 0;
+        padding: 60px 0 120px;
     }
 }

@@ -23,4 +23,13 @@
         });
     });
     
+    // scroll 관련
+    $(window).on('scroll', function() {
+        if ($(this).scrollTop() > 0) {
+            $('.page-controls').addClass('show');
+        } else {
+            $('.page-controls').removeClass('show');
+        }
+    });
+    
 })(jQuery);

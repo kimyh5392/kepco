@@ -464,10 +464,60 @@ figure {
     }
 }
 
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
 
 
-
-
+/* page-controls */
+#content {
+    position: relative;
+    .page-controls {
+        position: absolute;
+        bottom: 90px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        .container {
+            overflow: hidden;
+            > a {
+                display: inline-block;
+                color: #fff;
+                line-height: 40px;
+                border-radius: 100px;
+                padding: 0 15px;
+                background-color: #333;
+                &.btn-page-prev {
+                    float: left;
+                }
+                &.btn-page-next {
+                    float: right;
+                }
+            }
+        }
+        &.white {
+            .container {
+                > a {
+                    color: #333;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+    @media(max-width: $md) {
+        .page-controls {
+            bottom: 70px;
+            .container {
+                > a {
+                    font-size: 12px;
+                    line-height: 32px;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+}
 
 
 
