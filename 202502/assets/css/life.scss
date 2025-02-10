@@ -525,7 +525,7 @@
 .reference {
     .reference-header {
         background-color: #e76d32;
-        padding: 80px 0;
+        padding: 80px 0 200px;
         color: #fff;
         overflow: hidden;
         .container {
@@ -618,12 +618,10 @@
             }
         }
     }
-
-    // ********************** 1024 ***********************
     @media(max-width: 1024px) {
         .reference-header {
             background-color: #e76d32;
-            padding: 80px 0;
+            padding: 80px 0 160px;
             color: #fff;
             .container {
                 .reference-title {

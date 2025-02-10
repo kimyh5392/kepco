@@ -445,7 +445,7 @@ section {
 
 .reference .reference-header {
   background-color: #e76d32;
-  padding: 80px 0;
+  padding: 80px 0 200px;
   color: #fff;
   overflow: hidden; }
   .reference .reference-header .container .reference-title {
@@ -519,7 +519,7 @@ section {
 @media (max-width: 1024px) {
   .reference .reference-header {
     background-color: #e76d32;
-    padding: 80px 0;
+    padding: 80px 0 160px;
     color: #fff; }
     .reference .reference-header .container .reference-content {
       margin-top: 80px; }
